@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Metal Mania", system-ui;
+    text-transform: uppercase;
+    color: inherit;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    text-align: left;
+}
+
+.Logo {
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    color: #f00;
+}
+
+.login ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.login ul li {
+    display: inline;
+}
+
+.login ul li a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Metal Mania", system-ui;
+    font-size: 1.2rem;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.login ul li a:hover,
+.login ul li a.active {
+    background-color: #f00;
+}
+
+.logout {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'Metal Mania', system-ui;
+}
+
+nav {
+    background-color: #1b1b1b;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-family: "Metal Mania", system-ui;
+    font-size: 1.2rem;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.menu ul li a:hover,
+.menu ul li a.active {
+    background-color: #f00;
+}
+
+main {
+    padding: 20px;
+    background-color: #555;
+    min-height: 80vh;
+}
+
+.title {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 20px;
+    background-color: #666;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .login ul li,
+    .menu ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .login ul li a,
+    .menu ul li a {
+        padding: 15px;
+    }
+
+    nav {
+        padding: 20px 0;
+    }
+
+    .Logo {
+        font-size: 2rem;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+}
+
+.login-form {
+    max-width: 400px;
+    margin: 30px auto;
+    background-color: #1b1b1b;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #000c;
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    font-family: "Metal Mania", system-ui;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.login-form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+.login-form button {
+    padding: 12px;
+    font-size: 1.1rem;
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Metal Mania", system-ui;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #c00;
+}
