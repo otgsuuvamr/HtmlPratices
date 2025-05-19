@@ -135,24 +135,33 @@ main {
 
 .forms {
     display: flex;
-    width: 230px;
-    height: 245px;
+    justify-content: center;
+    align-content: center;
+    width: 330px;
+    height: 335px;
     font-family: "Metal Mania", system-ui;
     font-size: 1.2rem;
     text-align: center;
     padding: 20px;
     text-transform: uppercase;
-    background-color: #666;
+    border-radius: 10px;
+    /*background-color: #000000;*/
+}
+
+.sec-form{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 20px;
     border-radius: 10px;
     margin-top: 20px;
+    background-color: #666;
 }
 
-.forms input {
-    background-color: #000000;
+.forms input, .forms button {
     border-radius: 10px;
 }
-
-
 
 .grid {
     display: grid;
