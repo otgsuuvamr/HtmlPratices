@@ -145,7 +145,7 @@ main {
     padding: 20px;
     text-transform: uppercase;
     border-radius: 10px;
-    /*background-color: #000000;*/
+    background-color: #000000;
 }
 
 .sec-form{
@@ -204,7 +204,7 @@ main {
     padding-left: 20px;
 }
 
-.img1, .img2 {
+.img1, .img2, .img3, .img4 {
     border-radius: 10px;
     justify-content: center center;
     width: 680px;
