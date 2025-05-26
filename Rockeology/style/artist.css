@@ -31,7 +31,6 @@ header {
     justify-content: space-between;
     text-align: left;
     padding: 20px;
-    position: fixed;
     align-items: baseline;
     background-color: #000000;
 }
@@ -125,51 +124,13 @@ main {
 }
 
 .title {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     text-align: center;
     padding: 20px;
     text-transform: uppercase;
     background-color: #666;
     border-radius: 10px;
     margin-top: 20px;
-}
-
-.subtitle {
-    color: #ffffff;
-    font: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-}
-
-.forms {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    width: 330px;
-    height: 335px;
-    font-family: "Metal Mania", system-ui;
-    font-size: 1.2rem;
-    text-align: center;
-    padding: 20px;
-    text-transform: uppercase;
-    border-radius: 10px;
-    background-color: #000000;
-}
-
-.sec-form {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 20px;
-    background-color: #666;
-}
-
-.forms input,
-.forms button {
-    border-radius: 5px;
-    padding: 3%;
 }
 
 .grid {
@@ -186,18 +147,12 @@ main {
     border-radius: 10px;
 }
 
-.gen,
-.art,
-.abt {
+.art {
+    font-size: 1.2rem;
     display: grid;
-    text-align: center;
     justify-content: center;
-}
-
-.news {
     text-align: center;
-    border: 1px solid;
-    color: #000000;
+    color: #ffffff;
     border-radius: 10px;
     padding: 10px;
     width: auto;
@@ -205,24 +160,7 @@ main {
     background-color: #1b1b1b;
 }
 
-.txt-news1,
-.txt-news2 {
-    color: #ffffff;
-    align-items: normal;
-    font-size: small;
-}
-
-.info-news2,
-.info-news1 {
-    color: #fff;
-    text-align: left;
-    padding-left: 20px;
-}
-
-.img1,
-.img2,
-.img3,
-.img4 {
+.img {
     border-radius: 10px;
     width: 680px;
     height: 450px;
@@ -230,7 +168,7 @@ main {
 }
 
 .desc-art {
-    font-size: small;
+    font-size: smaller;
 }
 
 footer {
@@ -241,40 +179,4 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
-}
-
-@media (max-width: 768px) {
-    .login ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    .login ul li a {
-        padding: 15px;
-    }
-
-    nav {
-        padding: 20px 0;
-    }
-
-    .menu ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    .menu ul li a {
-        padding: 15px;
-    }
-
-    .Logo {
-        font-size: 2rem;
-    }
-
-    main {
-        padding: 15px;
-    }
-
-    .title {
-        font-size: 1.2rem;
-    }
 }

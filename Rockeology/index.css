@@ -16,6 +16,15 @@ body {
     line-height: 1.5;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding: 20px;
+    align-items: baseline;
+    background-color: #000000;
+}
+
 h1,
 h2,
 h3,
@@ -24,16 +33,6 @@ h5,
 h6 {
     font-family: "Metal Mania", system-ui;
     color: #ffffff;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
-    padding: 20px;
-    position: fixed;
-    align-items: baseline;
-    background-color: #000000;
 }
 
 .Logo {
@@ -57,7 +56,7 @@ header {
 }
 
 .login ul li a,
-menu ul li a {
+.menu ul li a {
     text-decoration: none;
     font-family: "Metal Mania", system-ui;
     font-size: 1.2rem;
@@ -68,12 +67,14 @@ menu ul li a {
     transition: background-color 0.3s ease, border-radius 0.3s ease;
 }
 
-.login ul li a:hover {
+.login ul li a:hover,
+.menu ul li a:hover {
     background-color: #ff0000;
     border-radius: 10px;
 }
 
-.login ul li a.active {
+.login ul li a.active,
+.menu ul li a.active {
     background-color: #ff0000;
     color: #fff;
     border-radius: 10px;
@@ -94,28 +95,6 @@ nav {
 .menu ul li {
     display: inline;
     margin-right: 20px;
-}
-
-.menu ul li a {
-    text-decoration: none;
-    font-family: "Metal Mania", system-ui;
-    font-size: 1.2rem;
-    color: #fff;
-    padding: 10px;
-    text-transform: uppercase;
-    border-radius: 10px;
-    transition: background-color 0.3s ease, border-radius 0.3s ease;
-}
-
-.menu ul li a:hover {
-    background-color: #ff0000;
-    border-radius: 10px;
-}
-
-.menu ul li a.active {
-    background-color: #ff0000;
-    color: #fff;
-    border-radius: 10px;
 }
 
 main {
@@ -140,38 +119,6 @@ main {
     font-size: 16px;
 }
 
-.forms {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    width: 330px;
-    height: 335px;
-    font-family: "Metal Mania", system-ui;
-    font-size: 1.2rem;
-    text-align: center;
-    padding: 20px;
-    text-transform: uppercase;
-    border-radius: 10px;
-    background-color: #000000;
-}
-
-.sec-form {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 20px;
-    background-color: #666;
-}
-
-.forms input,
-.forms button {
-    border-radius: 5px;
-    padding: 3%;
-}
-
 .grid {
     display: grid;
     background-color: #666;
@@ -184,14 +131,6 @@ main {
     grid-template-rows: repeat();
     gap: 10px;
     border-radius: 10px;
-}
-
-.gen,
-.art,
-.abt {
-    display: grid;
-    text-align: center;
-    justify-content: center;
 }
 
 .news {
@@ -227,10 +166,6 @@ main {
     width: 680px;
     height: 450px;
     justify-self: center;
-}
-
-.desc-art {
-    font-size: small;
 }
 
 footer {
