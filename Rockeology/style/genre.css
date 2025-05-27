@@ -100,7 +100,7 @@ nav {
 main {
     padding: 20px;
     background-color: #555;
-    min-height: 80vh;
+    min-height: 86vh;
 }
 
 .title {
@@ -135,6 +135,7 @@ main {
 
 footer {
     text-align: center;
+    font-size: 0.7rem;
     padding: 10px;
     background-color: #1b1b1b;
     color: #fff;

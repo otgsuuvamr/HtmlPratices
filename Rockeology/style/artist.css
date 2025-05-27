@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
 
 * {
     margin: 0;
@@ -24,6 +25,10 @@ h5,
 h6 {
     font-family: "Metal Mania", system-ui;
     color: #ffffff;
+}
+
+p {
+    font-family: "RocknRoll One", system-ui;
 }
 
 header {
@@ -120,7 +125,7 @@ nav {
 main {
     padding: 20px;
     background-color: #555;
-    min-height: 80vh;
+    min-height: 86vh;
 }
 
 .title {
@@ -168,11 +173,12 @@ main {
 }
 
 .desc-art {
-    font-size: smaller;
+    font-size: 0.7rem;
 }
 
 footer {
     text-align: center;
+    font-size: 0.7rem;
     padding: 10px;
     background-color: #1b1b1b;
     color: #fff;

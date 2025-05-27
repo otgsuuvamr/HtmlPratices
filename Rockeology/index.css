@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
 
 * {
     margin: 0;
@@ -11,7 +12,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    font-family: Arial, sans-serif;
     color: #ffffff;
     line-height: 1.5;
 }
@@ -33,6 +33,10 @@ h5,
 h6 {
     font-family: "Metal Mania", system-ui;
     color: #ffffff;
+}
+
+p {
+    font-family: "RocknRoll One", system-ui;
 }
 
 .Logo {
@@ -64,7 +68,7 @@ h6 {
     text-transform: uppercase;
     padding: 10px;
     border-radius: 10px;
-    transition: background-color 0.3s ease, border-radius 0.3s ease;
+    transition: background-color 0.5s ease, border-radius 0.5s ease;
 }
 
 .login ul li a:hover,
@@ -100,7 +104,7 @@ nav {
 main {
     padding: 20px;
     background-color: #555;
-    min-height: 80vh;
+    min-height: 86vh;
 }
 
 .title {
@@ -144,24 +148,20 @@ main {
     background-color: #1b1b1b;
 }
 
-.txt-news1,
-.txt-news2 {
+.txt-news {
+    font-size: 0.9rem;
     color: #ffffff;
     align-items: normal;
-    font-size: small;
 }
 
-.info-news2,
-.info-news1 {
+.info-news {
+    font-size: 0.6rem;
     color: #fff;
     text-align: left;
     padding-left: 20px;
 }
 
-.img1,
-.img2,
-.img3,
-.img4 {
+.img {
     border-radius: 10px;
     width: 680px;
     height: 450px;
@@ -170,6 +170,7 @@ main {
 
 footer {
     text-align: center;
+    font-size: 0.7rem;
     padding: 10px;
     background-color: #1b1b1b;
     color: #fff;
