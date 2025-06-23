@@ -7,8 +7,14 @@
     box-sizing: border-box;
 }
 
+html,
 body {
-    /*background-image: url(images/background.png);*/
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -18,10 +24,10 @@ body {
 
 header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    text-align: left;
+    align-items: center;
     padding: 20px;
-    align-items: baseline;
     background-color: #000000;
 }
 
@@ -40,18 +46,17 @@ p {
 }
 
 .Logo {
-    display: flex;
-    align-items: center;
     font-size: 2.5rem;
     color: #ff0000;
+    flex: 1;
 }
 
 .login ul {
     display: flex;
-    justify-content: right;
-    align-content: center;
-    list-style-type: none;
-    padding: 0;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 10px;
 }
 
 .login ul li {
@@ -108,13 +113,13 @@ main {
 }
 
 .title {
-    font-size: 1.7rem;
     text-align: center;
-    padding: 20px;
-    text-transform: uppercase;
+    font-size: 1.7rem;
     background-color: #666;
+    padding: 20px;
     border-radius: 10px;
     margin-top: 20px;
+    text-transform: uppercase;
 }
 
 .subtitle {
@@ -125,16 +130,12 @@ main {
 
 .grid {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
     background-color: #666;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 10px;
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat();
-    gap: 10px;
+    padding: 20px;
     border-radius: 10px;
+    width: 100%;
 }
 
 .news {
@@ -162,10 +163,11 @@ main {
 }
 
 .img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
     border-radius: 10px;
-    width: 680px;
-    height: 450px;
-    justify-self: center;
+    display: block;
 }
 
 footer {
@@ -179,7 +181,14 @@ footer {
     bottom: 0;
 }
 
-@media (max-width: 768px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .login ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
     .login ul li {
         display: block;
         margin-bottom: 10px;
@@ -187,6 +196,8 @@ footer {
 
     .login ul li a {
         padding: 15px;
+        display: block;
+        text-align: center;
     }
 
     nav {
@@ -203,14 +214,84 @@ footer {
     }
 
     .Logo {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        text-align: center;
+        width: 100%;
     }
 
     main {
-        padding: 15px;
+        padding: 10px;
     }
 
     .title {
         font-size: 1.2rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        padding: 10px 5px;
+    }
+
+    .img {
+        width: 100%;
+        height: auto;
+    }
+
+    footer {
+        font-size: 0.6rem;
+        padding: 8px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .Logo {
+        font-size: 2.2rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .img {
+        width: 680px;
+        height: 450px;
+    }
+
+    .Logo {
+        font-size: 2.5rem;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .grid {
+        /*max-width: 1140px;*/
+        margin: 0 auto;
+    }
+
+    .img {
+        width: auto;
+        height: auto;
     }
 }
